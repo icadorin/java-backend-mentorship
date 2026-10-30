@@ -1,0 +1,42 @@
+# Herança em Java — Perguntas e Respostas
+
+## 1. O que é herança em Programação Orientada a Objetos?
+
+Herança é uma relação de especialização entre classes, na qual uma subclasse herda características e comportamentos de uma superclasse.
+
+## 2. O que significa a relação “é um” (is-a)?
+
+Significa uma relação de especialização entre classes, ou seja, Cachorro é uma especialização de Animal.
+
+## 3. Qual é a diferença entre superclasse e subclasse?
+
+Superclasse é a classe pai, que define características e comportamentos que podem ser herdados. Subclasse é a classe filha, que herda características e comportamentos da superclasse e pode acrescentar suas próprias características e comportamentos.
+
+## 4. Por que a herança pode reduzir a duplicação de código?
+
+Centraliza as características e os comportamentos em comum das classes em uma superclasse, permitindo que as subclasses os herdem sem precisar duplicar suas definições.
+
+## 5. O que a palavra-chave `extends` faz em Java?
+
+A palavra-chave `extends` estabelece uma relação de herança entre classes, permitindo que a subclasse herde membros da superclasse, respeitando as regras de acesso da linguagem.
+
+## 6. Uma subclasse herda e pode acessar diretamente todos os membros da superclasse?
+
+Não. O acesso aos membros da superclasse depende dos modificadores de acesso e das regras da linguagem. Por exemplo, membros `private` não podem ser acessados diretamente pela subclasse, mas podem ser acessados indiretamente por meio de métodos disponibilizados pela superclasse.
+
+## 7. Qual é a diferença entre herança e composição?
+
+Herança representa uma relação de “é um”, em que uma subclasse especializa uma superclasse. Composição representa uma relação de “tem um”, em que um objeto possui outro objeto como parte de sua estrutura, permitindo que ambos colaborem.
+
+## 8. Ter código em comum é motivo suficiente para utilizar herança?
+
+Não. A herança pode reduzir a repetição de código e criar uma estrutura mais organizada, mas não se resume à reutilização de código. Ela representa uma relação de especialização entre classes, que precisa fazer sentido conceitualmente.
+
+## 9. O que acontece quando uma superclasse possui apenas um construtor com parâmetros e a subclasse não declara um construtor?
+
+Ocorre um erro de compilação quando o construtor padrão gerado implicitamente para a subclasse tenta chamar `super()`, pois a superclasse não possui um construtor sem parâmetros acessível.
+
+## 10. Qual é a responsabilidade do construtor da subclasse em relação ao construtor da superclasse?
+
+O construtor da subclasse recebe os valores necessários para inicializar o objeto e chama o construtor da superclasse por meio de `super(...)`, repassando os argumentos necessários para inicializar o estado definido na superclasse.
+

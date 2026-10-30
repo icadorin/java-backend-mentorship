@@ -183,8 +183,8 @@ backend-java-mentoria/
 - [x] 02-construtores
 - [x] 03-estado-atributos-e-variaveis
 - [x] 04-encapsulamento-e-acesso
-- [ ] 05-composicao
-- [ ] 06-heranca
+- [x] 05-composicao
+- [x] 06-heranca
 - [ ] 07-polimorfismo
 - [ ] 08-abstracao-e-interfaces
 - [ ] 09-metodos-object (equals, hashCode, toString)
